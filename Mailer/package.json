@@ -1,0 +1,14 @@
+{
+  "name": "mailer",
+  "version": "1.0.0",
+  "description": "Send mailer using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node mail"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^4.2.0"
+  }
+}

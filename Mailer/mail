@@ -1,0 +1,27 @@
+
+var nodemailer=require('nodemailer');
+
+any=nodemailer.createTransport({
+  service: 'Gmail',
+  auth:{
+      user:'example@example.com',//put your mail id here
+      pass:'yourpassword' //put your password here
+}});
+
+var mailOptions = {
+    from: 'example@example.com', // sender address
+    to: 'receiver@gmail.com', // list of receivers
+    subject: 'User Login', // Subject line
+    text: "test" , // plaintext body
+     html: '<b>Test login ✔</b>' // You can choose to send an HTML body instead
+};
+
+
+any.sendMail(mailOptions, function(error, info){
+    if(error){
+        console.log(error);
+    }else{
+        console.log('Message sent: ' + info.response);
+    };
+});
+
