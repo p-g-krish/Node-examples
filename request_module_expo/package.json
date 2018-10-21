@@ -1,0 +1,14 @@
+{
+  "name": "request_module_expo",
+  "version": "1.0.0",
+  "description": "For explore the request module",
+  "main": "re.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Palanikumar Gopalakrishnan",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
